@@ -15,10 +15,11 @@ $(document).ready(function(){
     //capture input and add to li
     var $input = $($todoInput).val();
     var $li = $('<li>' + $input + '</li>');
-    $('ul').append($li);
+    $('ul').append($li).hide().slideDown();
 
     //clear entry
     $($todoInput).val('');
+
 
   });
 
